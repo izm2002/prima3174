@@ -2319,27 +2319,6 @@ footer p:last-child {
     gap: 10px;
 }
 
-.evaluasi-item {
-    display: grid;
-    grid-template-columns: 22px 34px minmax(0, 1fr);
-    align-items: start;
-    gap: 12px;
-
-    background: #f8fafc;
-    border: 1px solid var(--border);
-    border-radius: 10px;
-
-    padding: 14px 15px;
-
-    cursor: pointer;
-    transition: .2s ease;
-}
-
-.evaluasi-item:hover {
-    border-color: var(--biru);
-    background: #f4f8fc;
-}
-
 .evaluasi-check {
     width: 25px;
     height: 25px;
@@ -2396,31 +2375,118 @@ footer p:last-child {
 
 .evaluasi-item {
     display: grid;
-    grid-template-columns: 35px minmax(0, 1fr) 45px;
-    align-items: start;
-    column-gap: 12px;
-    padding: 14px 0;
-    border-bottom: 1px solid var(--border);
+
+    /* Nomor | Teks | Centang | Akses */
+    grid-template-columns: 40px minmax(0, 1fr) 40px 130px;
+
+    align-items: center;
+
+    column-gap: 16px;
+
+    padding: 14px 18px;
+
+    background: #f8fafc;
+
+    border: 1px solid var(--border);
+
+    border-radius: 10px;
+
+    transition: .2s ease;
 }
 
-.evaluasi-number {
-    font-weight: bold;
-    color: var(--biru-tua);
-    line-height: 1.6;
+.evaluasi-item:hover {
+    border-color: var(--biru);
+
+    background: #f4f8fc;
 }
+
+
+/* NOMOR */
+
+.evaluasi-number {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--biru-muda);
+
+    color: var(--biru-tua);
+
+    border-radius: 8px;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* TEKS DOKUMEN */
 
 .evaluasi-text {
     min-width: 0;
+
+    color: var(--teks);
+
+    font-size: 13px;
+
     line-height: 1.6;
 }
 
+
+/* TANDA CENTANG */
+
 .evaluasi-check {
-    width: 45px;
+    width: 32px;
+    height: 32px;
+
     display: flex;
+
+    align-items: center;
     justify-content: center;
-    align-items: flex-start;
-    font-size: 25px;
-    line-height: 1.6;
+
+    font-size: 21px;
+
+    line-height: 1;
+
+    margin: 0;
+}
+
+
+/* TOMBOL AKSES */
+
+.evaluasi-access-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    min-height: 34px;
+
+    padding: 7px 10px;
+
+    background: var(--biru);
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+
+    transition: .2s ease;
+}
+
+.evaluasi-access-btn:hover {
+    background: var(--biru-tua);
 }
 /* =====================================
    FREEZE HEADER + MENU
@@ -2951,6 +3017,8 @@ footer {
     background: #2166a5;
     color: #ffffff;
     text-decoration: none;
+
+   
     border-radius: 8px;
     font-size: 13px;
     font-weight: 600;
