@@ -2235,6 +2235,18 @@ footer p:last-child {
 .evaluasi-submenu-content.active {
     display: block;
 }
+
+/* =====================================
+   KONTEN SUBMENU EVALUASI
+===================================== */
+
+.evaluasi-content {
+    display: none;
+}
+
+.evaluasi-content.active {
+    display: block;
+}
 /* =====================================
    KONTEN SUBMENU
 ===================================== */
