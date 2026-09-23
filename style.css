@@ -2942,3 +2942,33 @@ footer {
     }
 
 }
+/* Tombol Akses Dokumen */
+.evaluasi-access-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 14px;
+    background: #2166a5;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: 0.2s ease;
+}
+
+.evaluasi-access-btn:hover {
+    background: #123b67;
+}
+
+.evaluasi-item {
+    gap: 12px;
+}
+
+@media (max-width: 768px) {
+    .evaluasi-access-btn {
+        padding: 7px 10px;
+        font-size: 12px;
+    }
+}
