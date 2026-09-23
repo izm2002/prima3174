@@ -2486,9 +2486,10 @@ const evaluasiSubmenuButtons =
         ".evaluasi-submenu-btn"
     );
 
+
 const evaluasiSubmenuContents =
     document.querySelectorAll(
-        ".evaluasi-submenu-content"
+        ".evaluasi-content"
     );
 
 
@@ -2519,26 +2520,44 @@ evaluasiSubmenuButtons.forEach(function(button) {
         button.classList.add("active");
 
 
-        /* Tampilkan isi submenu yang sesuai */
+        /* Ambil nama submenu */
 
         const submenu =
             button.dataset.evaluasi;
 
 
+        /* Tampilkan isi submenu yang sesuai */
+
         if (submenu === "tindak-lanjut") {
 
-            document
-                .getElementById("tindakLanjutSection")
-                .classList.add("active");
+            const section =
+                document.getElementById(
+                    "tindakLanjutSection"
+                );
+
+
+            if (section) {
+
+                section.classList.add("active");
+
+            }
 
         }
 
 
         else if (submenu === "tahun-berjalan") {
 
-            document
-                .getElementById("tahunBerjalanSection")
-                .classList.add("active");
+            const section =
+                document.getElementById(
+                    "tahunBerjalanSection"
+                );
+
+
+            if (section) {
+
+                section.classList.add("active");
+
+            }
 
         }
 
